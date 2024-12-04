@@ -1,0 +1,10 @@
+/****** General ***********/
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

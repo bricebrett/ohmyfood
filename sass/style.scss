@@ -1,0 +1,10 @@
+/****** General ***********/
+@use "./variables.scss";
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    font-family: variables.$font-family;
+}
