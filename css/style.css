@@ -1,10 +1,117 @@
-/****** General ***********/
+.restaurant img {
+  object-fit: cover;
+  width: 346px;
+  height: 231px;
+}
+
 body {
   display: flex;
   justify-content: center;
   margin: 0;
   width: 100%;
   font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  width: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+header img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  margin: 20px auto;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  background-color: #eee;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.icone-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 18px;
+  margin-right: 17px;
+  color: #353535;
+}
+
+input {
+  border: none;
+  background-color: #eee;
+  color: #353535;
+  width: 115px;
+}
+input::placeholder {
+  color: #353535;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 1;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #F6F6F6;
+}
+.menu h2 {
+  margin: 0;
+  padding: 10px 30px;
+}
+.menu p {
+  font-size: 18px;
+  color: #353535;
+  font-weight: 300;
+  line-height: 21.09px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+.menu .button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.menu .button .button-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  font-size: 16px;
+  width: 218px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-image 0.3s, box-shadow 0.3s;
+}
+.menu .button .button-text:hover {
+  background-image: linear-gradient(to bottom, rgb(255, 172, 232.0820895522), #9356DC);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
