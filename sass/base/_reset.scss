@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as vars;
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    font-family: vars.$font-family;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: auto;
+    justify-content: space-around;
+}
+
+main img {
+    object-fit: cover;
+    width: 346px;
+    height: 231px;
+}
+

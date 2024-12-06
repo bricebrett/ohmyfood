@@ -1,4 +1,5 @@
-@use "./variables.scss";
+@use "sass:color";
+@use "../abstracts/variables" as vars;
 
 @mixin button {
     display: flex;
@@ -10,11 +11,11 @@
     height: 50px;
     border-radius: 50px;
     border: none;
-    color: variables.$color_2;
+    color: vars.$color_2;
     cursor: pointer;
     transition: background-image 0.3s, box-shadow 0.3s;
     &:hover {
-        background-image: linear-gradient(to bottom, lighten(#FF79DA, 10%), #9356DC); // Change la couleur au survol
+      background-image: linear-gradient(to bottom, color.adjust(#FF79DA, $lightness: 10%), #9356DC);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Ajoute l'ombre portée au survol
       }
 }

@@ -1,0 +1,50 @@
+@use "../abstracts/variables" as vars;
+
+.header {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	width: auto;
+	justify-content: space-around;
+	align-items: center;
+	.header__logo {
+		object-fit: cover;
+		height: 36px;
+	}
+	.header__navigation {
+		display: flex;
+		width: 100%;
+		background-color: #eee;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 50px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	}
+	.header__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		width: 18px;
+		margin-right: 17px;
+		color: vars.$color_1;
+	}
+}
+
+input {
+	border: none;
+	background-color: #eee;
+	color: vars.$color_1;
+	width: 115px;
+	&::placeholder {
+		color: vars.$color_1;
+		font-size: 1rem;
+		font-weight: 500;
+		opacity: 1;
+		width:100%;
+	}
+}
+
+
+

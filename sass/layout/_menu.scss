@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: vars.$background-color_1;
+    h2 {
+		margin: 0;
+		padding: 10px 30px;
+    }
+    p{
+        font-size: 18px;
+		color: vars.$color_1;
+        font-weight: 300;
+        line-height: 21.09px;
+		margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+    .button {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        .button-text {
+            @include mix.button;
+        }
+    }
+
+}
