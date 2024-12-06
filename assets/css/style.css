@@ -31,6 +31,7 @@ main img {
 .header .header__logo {
   object-fit: cover;
   height: 36px;
+  padding: 20px;
 }
 .header .header__navigation {
   display: flex;
@@ -87,11 +88,11 @@ input::placeholder {
   margin-bottom: 0px;
   padding-bottom: 20px;
 }
-.menu .button {
+.menu .menu__button-container {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.menu .button .button-text {
+.menu .menu__button-container .menu__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +106,7 @@ input::placeholder {
   cursor: pointer;
   transition: background-image 0.3s, box-shadow 0.3s;
 }
-.menu .button .button-text:hover {
+.menu .menu__button-container .menu__button:hover {
   background-image: linear-gradient(to bottom, rgb(255, 172, 232.0820895522), #9356DC);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }

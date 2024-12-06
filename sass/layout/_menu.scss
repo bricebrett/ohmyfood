@@ -21,10 +21,10 @@
         margin-bottom: 0px;
         padding-bottom: 20px;
     }
-    .button {
+    .menu__button-container {
         margin-top: 10px;
         margin-bottom: 20px;
-        .button-text {
+        .menu__button {
             @include mix.button;
         }
     }
