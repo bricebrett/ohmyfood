@@ -168,9 +168,12 @@ input::placeholder {
   color: white;
   background-color: #9356DC;
 }
+.fonctionnement .fonctionnement__list-button {
+  position: relative;
+}
 .fonctionnement .fonctionnement__list-button .fonctionnement__list-number {
   position: absolute;
-  left: 17px;
+  left: -11px;
   z-index: 1;
 }
 

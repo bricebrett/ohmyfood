@@ -56,9 +56,10 @@
     }
 
     .fonctionnement__list-button {
+        position: relative;
         .fonctionnement__list-number{
             position: absolute;
-            left: 17px;
+            left: -11px;
             z-index: 1;
         }
     }
