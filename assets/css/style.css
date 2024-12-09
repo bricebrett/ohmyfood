@@ -253,4 +253,31 @@ input::placeholder {
   opacity: 0;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+}
+.footer h2 {
+  margin-bottom: 20px;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+}
+.footer .footer__list {
+  list-style-type: none;
+  padding: 0;
+}
+.footer .footer__list .footer__item {
+  margin-bottom: 10px;
+}
+.footer .footer__list .footer__item:last-child {
+  margin-bottom: 0;
+}
+.footer .footer__list .footer__item .footer__link {
+  text-decoration: none;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
