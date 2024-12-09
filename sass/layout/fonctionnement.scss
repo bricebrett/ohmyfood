@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as vars;
+
+.fonctionnement {
+    padding: vars.$padding-main;
+    .fonctionnement__list{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-bottom: 10px;
+        margin: auto;
+        @media all and (min-width:1024px) {
+			width:80%;
+            display: flex;
+            flex-direction: row;
+		    margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+    .fonctionnement__list-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 20px;
+        padding: 4px 30px;
+        padding-right: 0;
+        width: 95%;
+        gap: 30px;
+        background-color: vars.$background-color_1;
+        border: none;
+        box-shadow: 0 4px 10px 0 #d5d5d5;
+        .fa-solid {
+            color: vars.$color_button;
+            &:hover {
+                cursor: pointer;
+                color: vars.$color_button_hover;
+            }
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .fonctionnement__list-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        color: vars.$color_2;
+        background-color: vars.$color_button_hover;
+    }
+
+    .fonctionnement__list-button {
+        .fonctionnement__list-number{
+            position: absolute;
+            left: 17px;
+            z-index: 1;
+        }
+    }
+}
