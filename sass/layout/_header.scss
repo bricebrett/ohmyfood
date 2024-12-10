@@ -21,6 +21,9 @@
 		text-align: center;
 		height: 50px;
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+		@media screen and (min-width: 1024px) {
+			box-shadow: none;
+		}
 	}
 	.header__icon {
 		display: flex;

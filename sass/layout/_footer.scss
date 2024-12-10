@@ -6,19 +6,30 @@
     background-color: vars.$background_color_footer;
     color: vars.$color_2;
     padding: 20px;
+    @media screen and (min-width: 1024px) {
+        flex-flow: row-reverse;
+        padding: 30px;
+        align-items: center;
+    }
     h2 {
-        margin-bottom: 20px;
+        margin-top: 0;
+        margin-right: 20px;
         font-family: vars.$font-family_2;
-        margin: 0;
+        font-size: 18px;
     }
 .footer__list {
     list-style-type: none;
     padding: 0;
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 15px;
+        margin-right: 80px;
+    }
     .footer__item {
         margin-bottom: 10px;
-        &:last-child {
-            margin-bottom: 0;
-        }
         .footer__link {
             text-decoration: none;
             color: vars.$color_2;
