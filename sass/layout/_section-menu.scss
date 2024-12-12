@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as vars;
+
+.menu-section {
+    .menu-section__image {
+        object-fit: cover;
+        width: 100%;
+    }
+}

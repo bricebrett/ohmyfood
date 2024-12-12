@@ -19,10 +19,12 @@ body {
   }
 }
 
-main img {
-  object-fit: cover;
-  width: 346px;
-  height: 231px;
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 .header {
@@ -212,7 +214,6 @@ input::placeholder {
   margin-bottom: 0;
 }
 .restaurants .restaurant__cards {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -321,6 +322,33 @@ input::placeholder {
 .footer .footer__list .footer__item .footer__link {
   text-decoration: none;
   color: white;
+}
+
+.header-menu {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+}
+.header-menu .header-menu__nav {
+  display: flex;
+  align-items: center;
+}
+.header-menu .header-menu__nav .header-menu__back-link {
+  position: absolute;
+  left: 25px;
+}
+.header-menu .header-menu__nav .header-menu__back-link .fa-solid {
+  font-size: 23px;
+}
+.header-menu .header-menu__nav .header-menu__logo {
+  object-fit: cover;
+  height: 36px;
+  padding: 20px;
+}
+
+.menu-section .menu-section__image {
+  object-fit: cover;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
