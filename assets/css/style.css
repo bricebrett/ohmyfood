@@ -1,5 +1,4 @@
 body {
-  display: flex;
   justify-content: center;
   margin: 0;
   width: 100%;
@@ -324,31 +323,79 @@ input::placeholder {
   color: white;
 }
 
-.header-menu {
+.header__menu {
   display: flex;
   width: auto;
   justify-content: space-around;
 }
-.header-menu .header-menu__nav {
+.header__menu .header__menu-nav {
   display: flex;
   align-items: center;
 }
-.header-menu .header-menu__nav .header-menu__back-link {
+.header__menu .header__menu-nav .header__menu-back-link {
   position: absolute;
   left: 25px;
 }
-.header-menu .header-menu__nav .header-menu__back-link .fa-solid {
+.header__menu .header__menu-nav .header__menu-back-link .fa-solid {
   font-size: 23px;
 }
-.header-menu .header-menu__nav .header-menu__logo {
+.header__menu .header__menu-nav .header__menu-logo {
   object-fit: cover;
   height: 36px;
   padding: 20px;
 }
 
-.menu-section .menu-section__image {
+.menu-section {
+  margin-bottom: -80px;
+}
+.menu-section .menu__section-image {
   object-fit: cover;
   width: 100%;
+  height: 375px;
+}
+.menu-section .menu__container {
+  transform: translate(0px, -80px);
+  padding: 20px;
+  background-color: #F6F6F6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.menu-section .menu__container .menu__section-title {
+  font-family: "Shrikhand", cursive;
+}
+.menu-section .menu__container .menu__section-title .menu__section-favorite {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.menu-section .menu__container .menu__section-title .menu__section-favorite .icon-fill,
+.menu-section .menu__container .menu__section-title .menu__section-favorite .icon-empty {
+  position: absolute;
+  top: -50px;
+  right: 30px;
+  font-size: 25.6px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.menu-section .menu__container .menu__section-title .menu__section-favorite .icon-fill {
+  opacity: 0;
+  z-index: 2;
+  background: linear-gradient(0deg, #df6fda 50%, #ab5edc 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.menu-section .menu__container .menu__section-title .menu__section-favorite .icon-empty {
+  opacity: 1;
+}
+.menu-section .menu__container .menu__section-title .menu__section-favorite:hover .icon-fill {
+  opacity: 1;
+  color: white;
+}
+.menu-section .menu__container .menu__section-title .menu__section-favorite:hover .icon-empty {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

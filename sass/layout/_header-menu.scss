@@ -1,20 +1,20 @@
 @use "../abstracts/variables" as vars;
 
-.header-menu {
+.header__menu {
     display: flex;
 	width: auto;
 	justify-content: space-around;
-    .header-menu__nav {
+    .header__menu-nav {
         display: flex;
         align-items: center;
-        .header-menu__back-link {
+        .header__menu-back-link {
             position: absolute;
             left: 25px;
             .fa-solid {
                 font-size: 23px;
             }
         }
-        .header-menu__logo {
+        .header__menu-logo {
             object-fit: cover;
             height: 36px;
             padding: 20px;

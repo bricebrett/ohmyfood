@@ -1,8 +1,24 @@
 @use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
 
 .menu-section {
-    .menu-section__image {
+    margin-bottom: -80px;
+    .menu__section-image {
         object-fit: cover;
         width: 100%;
+        height: 375px;
+    }
+    .menu__container {
+        transform: translate(0px, -80px);
+        padding: vars.$padding-main;
+        background-color: vars.$background-color_1;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;;
+        .menu__section-title {
+            font-family: "Shrikhand", cursive;
+            .menu__section-favorite {
+                @include mix.button-favorite;
+            }
+        }
     }
 }
