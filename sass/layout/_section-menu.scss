@@ -16,9 +16,33 @@
         border-top-right-radius: 40px;;
         .menu__section-title {
             font-family: "Shrikhand", cursive;
+            h1 {
+                font-size: 28px
+            }
             .menu__section-favorite {
+                top: -8px;
                 @include mix.button-favorite;
             }
+        }
+    }
+    .menu__cards-title {
+        h2 {
+            text-transform: uppercase;
+            font-size: 16px;
+            border-bottom: solid 3px #99E2D0;
+            width:50px;
+            padding-bottom: 8px;
+            font-weight: 50;
+        }
+    }
+
+    .menu__button-container {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        .menu__button {
+            @include mix.button;
         }
     }
 }

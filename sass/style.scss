@@ -1,22 +1,26 @@
-@use "abstracts/variables";
-@use "abstracts/mixins";
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
 
-@use "base/reset";
+@use "./base/reset";
 
 /// Home ///
 
-@use "layout/header";
-@use "layout/menu";
-@use "layout/fonctionnement";
-@use "layout/restaurants";
-@use "layout/footer";
+@use "./layout/header";
+@use "./layout/menu";
+@use "./layout/fonctionnement";
+@use "./layout/restaurants";
+@use "./layout/footer";
 
 /// Restaurants ///
 
-@use "layout/header-menu";
-@use "layout/section-menu";
+@use "./layout/header-menu";
+@use "./layout/section-menu";
 
-@use "components/menu-cards";
+/// Components ///
+
+@use "./components/menu-cards";
+@use "./components/card-new"
+
 
 
 
