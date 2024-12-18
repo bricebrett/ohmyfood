@@ -3,14 +3,20 @@
 
 @use "base/reset";
 
+/// Home ///
+
 @use "layout/header";
 @use "layout/menu";
 @use "layout/fonctionnement";
 @use "layout/restaurants";
 @use "layout/footer";
 
+/// Restaurants ///
+
 @use "layout/header-menu";
 @use "layout/section-menu";
+
+@use "components/menu-cards";
 
 
 

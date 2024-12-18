@@ -20,6 +20,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
@@ -396,6 +397,79 @@ input::placeholder {
 }
 .menu-section .menu__container .menu__section-title .menu__section-favorite:hover .icon-empty {
   opacity: 0;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background-color: white;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  margin-bottom: 15px;
+  border-radius: 12px;
+  padding: 15px 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+.menu__item-title {
+  flex: 1;
+  max-width: calc(100% - 0px);
+  transition: max-width 0.6s ease;
+}
+.menu__item-title h3 {
+  margin: 0;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__item-title p {
+  margin: 5px 0 0;
+  font-size: 15px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__item-price {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.6s ease;
+}
+.menu__item-check {
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  height: 100%;
+  width: 60px;
+  margin-left: 15px;
+  background-color: #99E2D0;
+  border-radius: 0 12px 12px 0;
+  transition: right 0.6s ease;
+}
+.menu__item-check::after {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+}
+.menu__item:hover .menu__item-title {
+  max-width: calc(100% - 130px);
+}
+.menu__item:hover .menu__item-check {
+  right: 0;
+}
+.menu__item:hover .menu__item-price {
+  transform: translateX(-60px);
 }
 
 /*# sourceMappingURL=style.css.map */
