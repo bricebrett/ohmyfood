@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as vars;
+
+.restaurant__cards-icon,
+.menu__section-favorite {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    .icon-fill,
+    .icon-empty {
+        position: absolute;
+        top: -50px;
+        right: 30px;
+        font-size: 25.6px;
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+
+    .icon-fill {
+        opacity: 0;
+        z-index: 2;
+        background: linear-gradient(0deg, #df6fda 50%, #ab5edc 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+
+    .icon-empty {
+        opacity: 1;
+    }
+
+    &:hover {
+        .icon-fill {
+            opacity: 1;
+            color: white;
+        }
+        .icon-empty {
+            opacity: 0;
+        }
+    }
+}

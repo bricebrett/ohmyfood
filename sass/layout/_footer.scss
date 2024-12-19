@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
 
 .footer {
     display: flex;
@@ -6,7 +7,7 @@
     background-color: vars.$background_color_footer;
     color: vars.$color_2;
     padding: 20px;
-    @media screen and (min-width: 1024px) {
+    @include mix.respond-to('large') {
         flex-flow: row-reverse;
         padding: 30px;
         align-items: center;
@@ -17,24 +18,23 @@
         font-family: vars.$font-family_2;
         font-size: 18px;
     }
-.footer__list {
-    list-style-type: none;
-    padding: 0;
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        gap: 15px;
-        margin-right: 80px;
-    }
-    .footer__item {
-        margin-bottom: 10px;
-        .footer__link {
-            text-decoration: none;
-            color: vars.$color_2;
+    .footer__list {
+        list-style-type: none;
+        padding: 0;
+        @include mix.respond-to('large') {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 15px;
+            margin-right: 80px;
+        }
+        .footer__item {
+            margin-bottom: 10px;
+            .footer__link {
+                text-decoration: none;
+                color: vars.$color_2;
+            }
         }
     }
-}
-
 }

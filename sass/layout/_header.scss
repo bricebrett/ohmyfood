@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
 
 .header {
 	display: flex;
@@ -7,6 +8,17 @@
 	width: auto;
 	justify-content: space-around;
 	align-items: center;
+	.header__logo-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		box-shadow: 0px 2px 4px 0px #00000026;
+		z-index: 2;
+		@include mix.respond-to('large') {
+			box-shadow: none;
+		}
+	}
 	.header__logo {
 		object-fit: cover;
 		height: 36px;
@@ -20,8 +32,9 @@
 		align-items: center;
 		text-align: center;
 		height: 50px;
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-		@media screen and (min-width: 1024px) {
+		box-shadow: 0px 4px 4px 0px #00000040;
+		z-index: 1;
+		@include mix.respond-to('large') {
 			box-shadow: none;
 		}
 	}

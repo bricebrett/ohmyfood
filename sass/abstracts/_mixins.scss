@@ -1,61 +1,14 @@
 @use "sass:color";
 @use "../abstracts/variables" as vars;
 
-@mixin button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-    font-size: 16px;
-    width: 218px;
-    height: 50px;
-    border-radius: 50px;
-    border: none;
-    color: vars.$color_2;
-    cursor: pointer;
-    transition: background-image 0.3s, box-shadow 0.3s;
-    &:hover {
-      background-image: linear-gradient(to bottom, color.adjust(#FF79DA, $lightness: 10%), #9356DC);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      }
-}
-
-@mixin button-favorite {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-
-  .icon-fill,
-  .icon-empty {
-    position: absolute;
-    top: -50px;
-    right: 30px;
-    font-size: 25.6px;
-    cursor: pointer;
-    transition: 0.2s linear;
-  }
-
-  .icon-fill {
-    opacity: 0;
-    z-index: 2;
-    background: linear-gradient(0deg, #df6fda 50%, #ab5edc 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
-
-  .icon-empty {
-    opacity: 1;
-  }
-  &:hover {
-    .icon-fill {
-      opacity: 1;
-      color: white; 
-    }
-    .icon-empty {
-      opacity: 0;
-    }
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'small' {
+    @media (min-width: 600px) { @content; }
+  } @else if $breakpoint == 'medium' {
+    @media (min-width: 768px) { @content; }
+  } @else if $breakpoint == 'large' {
+    @media (min-width: 1024px) { @content; }
+  } @else if $breakpoint == 'xlarge' {
+    @media (min-width: 1200px) { @content; }
   }
 }

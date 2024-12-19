@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as vars;
+
+.menu__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    font-size: 16px;
+    width: 218px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    color: vars.$color_2;
+    cursor: pointer;
+    transition: background-image 0.3s, box-shadow 0.3s;
+    &:hover {
+        background-image: linear-gradient(to bottom, lighten(#FF79DA, 10%), #9356DC);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+}
