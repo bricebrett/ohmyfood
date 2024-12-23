@@ -8,6 +8,10 @@
     justify-content: flex-end;
     position: relative;
 
+    input[type="checkbox"] {
+        display: none;
+    }
+
     .icon-fill,
     .icon-empty {
         position: absolute;
@@ -31,13 +35,12 @@
         opacity: 1;
     }
 
-    &:hover {
-        .icon-fill {
-            opacity: 1;
-            color: white;
-        }
-        .icon-empty {
-            opacity: 0;
-        }
+    input[type="checkbox"]:checked + .icon-empty {
+        opacity: 0;
+    }
+
+    input[type="checkbox"]:checked + .icon-empty + .icon-fill {
+        opacity: 1;
+        color: white;
     }
 }
