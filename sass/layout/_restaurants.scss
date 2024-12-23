@@ -6,7 +6,7 @@
     padding-bottom: 60px;
     background-color: vars.$background-color_1;
     @include mix.respond-to('large') {
-        padding: 1px 100px 40px 110px;
+        padding: 1px 180px 40px 180px;
         margin-top: 20px;
     }
     h2 {
@@ -19,7 +19,7 @@
         @include mix.respond-to('large') {
             display: grid; 
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            gap: 20px 60px;
         }
     }
     .restaurant__cards-content {
@@ -40,7 +40,7 @@
             font-size: 18px;
         }
         p {
-            margin: 0px 0px 10px 15px;
+            margin: 0px 0px 20px 15px;
             font-weight: 300;
             font-size: 17px;
         }
