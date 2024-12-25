@@ -4,12 +4,12 @@
 .fonctionnement {
     padding: vars.$padding-main;
     h2 {
-        margin-top: 10px;
+        margin-top: 30px;
     }
     @include mix.respond-to('large') {
         padding: 1px 180px 20px 180px;
         h2 {
-            margin-top: 20px;
+            margin-top: 50px;
         }
     }
     .fonctionnement__list {
