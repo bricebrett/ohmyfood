@@ -408,7 +408,7 @@ input::placeholder {
 }
 .menu__item-title p {
   margin: 5px 0 0;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
@@ -453,7 +453,7 @@ input::placeholder {
   width: 100%;
 }
 .menu__item .menu__item-checkbox:checked + .menu__item-label .menu__item-title {
-  max-width: calc(100% - 130px);
+  max-width: calc(100% - 110px);
 }
 .menu__item .menu__item-checkbox:checked + .menu__item-label .menu__item-check {
   right: 0;
@@ -594,11 +594,6 @@ input::placeholder {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-.restaurant__cards-icon .icon-empty,
-.menu__section-favorite .icon-empty {
-  opacity: 1;
 }
 .restaurant__cards-icon input[type=checkbox]:checked + .icon-empty,
 .menu__section-favorite input[type=checkbox]:checked + .icon-empty {
@@ -607,7 +602,6 @@ input::placeholder {
 .restaurant__cards-icon input[type=checkbox]:checked + .icon-empty + .icon-fill,
 .menu__section-favorite input[type=checkbox]:checked + .icon-empty + .icon-fill {
   opacity: 1;
-  color: white;
 }
 
 .loader-container {
@@ -639,7 +633,7 @@ input::placeholder {
   }
 }
 .lds-dual-ring {
-  color: #1c4c5b;
+  color: #353535;
 }
 
 .lds-dual-ring,

@@ -28,7 +28,7 @@
     }
     p {
       margin: 5px 0 0;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 300;
       white-space: nowrap;
       overflow: hidden;
@@ -81,7 +81,7 @@
   }
 
   .menu__item-checkbox:checked + .menu__item-label .menu__item-title {
-    max-width: calc(100% - 130px);
+    max-width: calc(100% - 110px);
   }
 
   .menu__item-checkbox:checked + .menu__item-label .menu__item-check {
@@ -91,6 +91,6 @@
   .menu__item-checkbox:checked + .menu__item-label .menu__item-price {
     transform: translateX(-60px);
   }
-
 @include mix.fadeInUp(10);
+
 }

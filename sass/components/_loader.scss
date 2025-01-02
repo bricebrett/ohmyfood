@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as vars;
+
 .loader-container {
   position: fixed;
   top: 0;
@@ -28,7 +30,7 @@
 }
 
 .lds-dual-ring {
-  color: #1c4c5b;
+  color: vars.$background_color_footer;
 }
 
 .lds-dual-ring,
